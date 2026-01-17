@@ -1,0 +1,5 @@
+{
+    "idf.espIdfPathWin": "d:\\esp\\v5.5.2\\esp-idf",
+    "idf.toolsPathWin": "d:\\.espressif",
+    "idf.pythonInstallPath": "d:\\.espressif\\tools\\idf-python\\3.11.2\\python.exe"
+}
