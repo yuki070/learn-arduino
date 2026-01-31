@@ -22,14 +22,15 @@ void setup() {
 }
 
 void loop() {
-  if (dht.read()) {
-    float temperature = dht.readTemperature();
-    float humidity = dht.readHumidity();
-    screen.showTempHum(temperature, humidity);
-  } else {
-    Serial.println("Failed to read from DHT sensor!");
-  }
+  screen.showSensorValue(analogRead(A0));
+  // if (dht.read()) {
+  //   float temperature = dht.readTemperature();
+  //   float humidity = dht.readHumidity();
+  //   screen.showTempHum(temperature, humidity);
+  // } else {
+  //   Serial.println("Failed to read from DHT sensor!");
+  // }
 
   // 1秒刷新显示内容
-  delay(1000);
+  delay(10);
 }
