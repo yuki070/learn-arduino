@@ -12,6 +12,7 @@ public:
   bool begin(uint8_t addr = 0x3C);
   void clear();
   void showTempHum(float temperature, float humidity);
+  void showSensorValue(int lightLevel);
 
 private:
   Adafruit_SSD1306 display;

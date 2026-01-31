@@ -36,3 +36,16 @@ void Screen::showTempHum(float temperature, float humidity) {
 
   display.display();
 }
+
+void Screen::showSensorValue(int analogInput)
+{
+  display.clearDisplay();
+  display.setTextSize(2);
+
+  display.setCursor(0, 0);
+  display.print("value: ");
+  display.setCursor(24, 15);
+  display.print(analogInput);
+
+  display.display();
+}
